@@ -1,0 +1,92 @@
+/* Instagram-like gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* White Card UI */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+h1 {
+    color: #e1306c;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e1306c;
+}
+
+/* Options Styling */
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #e1306c;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    background: white;
+    color: #e1306c;
+}
+
+.option:hover {
+    background: #e1306c;
+    color: white;
+}
+
+.correct {
+    background: #28a745 !important;
+    color: white;
+}
+
+.wrong {
+    background: #dc3545 !important;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    button, .option {
+        font-size: 14px;
+    }
+}
