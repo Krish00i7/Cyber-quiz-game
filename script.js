@@ -109,4 +109,4 @@ function restartQuiz() {
     scoreElement.innerText = "Score: 0";
     restartBtn.style.display = "none";
     loadQuestion();
-     }
+}
