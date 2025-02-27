@@ -1,4 +1,4 @@
-* Instagram-like gradient background */
+/* Instagram-like gradient background */
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -112,3 +112,5 @@ button:hover {
     margin: 5px 0;
     font-size: 14px;
 }
+
+    
