@@ -1,4 +1,4 @@
-/* Instagram-like gradient background */
+* Instagram-like gradient background */
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -89,4 +89,26 @@ button:hover {
     button, .option {
         font-size: 14px;
     }
+}
+#college-title {
+    background: linear-gradient(to right, #521b5c, #7b1e63, #9d2235, #c75c27);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    width: 100%; /* Full width */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#college-title h1 {
+    color: White;
+    margin: 0;
+    font-size: 24px;
+}
+
+#college-title p {
+    margin: 5px 0;
+    font-size: 14px;
 }
