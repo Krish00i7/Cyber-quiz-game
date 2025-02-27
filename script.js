@@ -1,20 +1,24 @@
 const questions = [
-    { question: "What is a strong password?", options: ["123456", "password", "Qw!8zY@#", "abc123"], answer: 2 },
-    { question: "What does HTTPS stand for?", options: ["HyperText Transfer Protocol Secure", "High Tech Process System", "Home Transfer Protection Service", "None"], answer: 0 },
-    { question: "Which of these is an example of phishing?", options: ["A scam email asking for passwords", "Using a firewall", "Encrypting files", "Updating antivirus software"], answer: 0 },
-    { question: "What should you do if you receive a suspicious email?", options: ["Open it immediately", "Click the link to check", "Delete or report it", "Reply asking for details"], answer: 2 },
-    { question: "What is two-factor authentication?", options: ["A second password", "A security process requiring two verification steps", "A type of malware", "A WiFi encryption protocol"], answer: 1 },
-    { question: "Which of the following is a type of malware?", options: ["Firewall", "Trojan Horse", "VPN", "Antivirus"], answer: 1 },
-    { question: "What should you avoid when using public Wi-Fi?", options: ["Browsing social media", "Accessing bank accounts", "Watching videos", "Reading news"], answer: 1 },
-    { question: "What is the purpose of a firewall?", options: ["Store passwords", "Block unauthorized access", "Speed up the internet", "Detect WiFi networks"], answer: 1 },
-    { question: "What is social engineering?", options: ["Hacking networks", "Manipulating people to gain information", "Encrypting files", "A new form of malware"], answer: 1 },
-    { question: "What should you do if your password is leaked in a data breach?", options: ["Ignore it", "Change it immediately", "Share it with others", "Use the same password for everything"], answer: 1 },
-    { question: "Which of these is the safest way to store passwords?", options: ["Write them down", "Use a password manager", "Memorize all of them", "Use the same password everywhere"], answer: 1 },
-    { question: "Which type of attack uses a fake website to steal information?", options: ["Brute-force", "Phishing", "Ransomware", "DDoS"], answer: 1 }
+    { question: "What is a strong password?", options: ["123456", "abc123", "Qw!8zY@#", "password"], answer: 2 },
+    { question: "What does HTTPS stand for?", options: ["High Tech Process System", "Home Transfer Protection Service", "None", "HyperText Transfer Protocol Secure"], answer: 3 },
+    { question: "Which of these is an example of phishing?", options: ["Using a firewall", "Encrypting files", "A scam email asking for passwords", "Updating antivirus software"], answer: 2 },
+    { question: "What should you do if you receive a suspicious email?", options: ["Delete or report it", "Reply asking for details", "Open it immediately", "Click the link to check"], answer: 0 },
+    { question: "What is two-factor authentication?", options: ["A security process requiring two verification steps", "A second password", "A WiFi encryption protocol", "A type of malware"], answer: 0 },
+    { question: "Which of the following is a type of malware?", options: ["VPN", "Antivirus", "Trojan Horse", "Firewall"], answer: 2 },
+    { question: "What should you avoid when using public Wi-Fi?", options: ["Accessing bank accounts", "Watching videos", "Browsing social media", "Reading news"], answer: 0 },
+    { question: "What is the purpose of a firewall?", options: ["Detect WiFi networks", "Speed up the internet", "Block unauthorized access", "Store passwords"], answer: 2 },
+    { question: "What is social engineering?", options: ["Encrypting files", "A new form of malware", "Manipulating people to gain information", "Hacking networks"], answer: 2 },
+    { question: "What should you do if your password is leaked in a data breach?", options: ["Change it immediately", "Ignore it", "Use the same password for everything", "Share it with others"], answer: 0 },
+    { question: "Which of these is the safest way to store passwords?", options: ["Use a password manager", "Memorize all of them", "Write them down", "Use the same password everywhere"], answer: 0 },
+    { question: "Which type of attack uses a fake website to steal information?", options: ["DDoS", "Brute-force", "Phishing", "Ransomware"], answer: 2 }
 ];
-
 let currentQuestionIndex = 0;
 let score = 0;
+
+function startGame() {
+    document.getElementById("college-title").style.display = "none"; // Hide the title
+    // Your existing game start logic
+}
 
 const startBtn = document.getElementById("startBtn");
 const quizContainer = document.getElementById("quizContainer");
@@ -105,4 +109,4 @@ function restartQuiz() {
     scoreElement.innerText = "Score: 0";
     restartBtn.style.display = "none";
     loadQuestion();
-}
+     }
